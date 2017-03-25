@@ -1,5 +1,5 @@
 # HackTJ2017
 
-This is my HackTJ Project, created with Bejoy Sen.
+This is my HackTJ Project, created with Bejoy Sen and Alan Zhang.
 
 Will be updated within 24 hours (hopefully)
