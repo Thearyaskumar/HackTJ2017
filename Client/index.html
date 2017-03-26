@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Photon</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="photon.css">
+
+    <!-- Electron Javascript -->
+    <script src="app.js" charset="utf-8"></script>
   </head>
+
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <!-- Wrap your entire app inside .window -->
+    <div class="window">
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Access Pix</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+	<div class="pane-group">
+           <div class="pane-sm sidebar">
+		<h3><center><script type="text/javascript">
+      function open_fun() {
+        document.getElementById("example.js").innerHTML = "<a href='javascript:clo_fun()'>CLOSE</a>";
+      }
+      function clo_fun() {
+        document.getElementById(example.js").innerHTML = "<a href='javascript:open_fun()'>OPEN</a>";
+      }
+    </script></center></h3>
+		<h4><center><a href="example.js">Server</a></center></h4>
+		<div style = "position : absolute; bottom : 5px"; "text-align:center"><a href = "example.js"><img src = "settings.png" width = "40" height = "40"/></a></div>
+       	   </div>
+		<div class="pane">
+          		<h1>Access your Pictures!</h1>
+          		<p>
+            			IM A STRING BITCH
+          		</p>
+        	</div>
+    	</div>
+        
+      </div>
+    </div>
   </body>
 </html>
