@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        (function checkStorage() {
+            if(window.localStorage.username!=null) {
+                window.location.href = "index.html"
+            }
+        }).checkStorage();
+        function go(){
+            window.localStorage.username = document.getElementById('username').value;
+            const {dialog} = require('electron').remote
+            dialog.showErrorBox(document.getElementById('ip').value, window.localStorage.username)
+            window.location.href = "index.html";
+            //dialog.showErrorBox('title','content')    
+        }
+    </script>
+</head>
+<body>
+        <h2><center>Login</center></h2>
+        <center><input type="text" id="ip" placeholder="IP Address"></center>
+        <center><input type="text" id="username" placeholder="username"></center>
+        <center><input type="password" id="password" placeholder="password"></center>
+        <center><button onclick="go()">Submit</button></center>
+</body>
+</html>
